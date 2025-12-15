@@ -1,0 +1,255 @@
+body {
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	background-color:#FFFFFF;
+	margin: 0;
+	border-top: 10px solid #c23b27;
+	border-bottom: 10px solid #c23b27;
+}
+
+header {
+    text-align: center;
+}
+
+.logo {
+    margin: 0 auto;
+    display: block;
+    min-width: 300px;
+}
+
+h1, h2, h3 {
+    font-family: "Permanent Marker", cursive;
+    color: #c23b27;
+}
+
+/* Website Links except the nav */
+a:link {
+    color: #2d4a1f;  
+}
+a:visited {
+    color: #2d4a1f;
+}
+a:hover {
+    color: #c23b27;
+}
+a:active {
+    color: #4a3520;
+}
+
+/* Navigation */
+nav {
+    background-color: #2d4a1f;
+    border-top: 3px solid #c23b27;
+    border-bottom: 3px solid #c23b27;
+    padding: 5px;
+}
+
+nav ul {
+    list-style-type: none;
+	text-align: center;
+	margin: 8px 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    padding: 5px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav a:link {
+    color: #e8dcc4;
+}
+
+nav a:visited {
+    color: #e8dcc4;
+}
+
+nav a:hover {
+    color: #c23b27;
+}
+
+nav a:active {
+    color: white;
+}
+
+main {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+/* Footer */
+footer{
+	border-top: #2d4a1f 3px solid;
+	text-align: center;
+	clear: both;
+}
+
+.home-hero {
+    background-image: url(images/mushroom-9864616.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 80px 0;
+}
+
+.home-hero h1 {
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    text-align: center;
+    font-size: 3em;
+    margin: 0;
+}
+
+.home-photo {
+    float: right;
+    max-width: 40%;
+    height: auto;
+    margin: 0 0 20px 20px;
+}
+/* Resume page container - creates centered box with shadow for paper effect */
+.resume-page {
+	background-color: #ffffff;
+	border: 1px solid #ccc;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+	max-width: 700px;
+	margin: 30px auto;
+	padding: 40px 50px;
+}
+/*CSS without a media query--applies to all sizes unless overridden*/
+h1{
+	font-size: 4em;
+}
+h2{
+	font-size: 2em;
+}
+h3{
+	font-size: 1.7em;
+}
+
+/* CSS Adjustments for Tablets */
+@media only screen and (max-width: 1024px) {
+	h1{
+		font-size: 2.5em;
+	}
+	h2{
+		font-size: 1.5em;
+	}
+	h3{
+		font-size: 1.3em;
+	}
+	main,
+	footer{
+		width: 90%;
+	}
+}
+
+/* CSS Adjustments for Smartphones */
+@media only screen and (max-width: 768px){
+	h1{
+		font-size: 2em;
+	}
+	h2{
+		font-size: 1.5em;
+	}
+	h3{
+		font-size: 1.3em;
+	}
+	.home-photo {
+		float: none;
+		max-width: 100%;
+		display: block;
+		margin: 20px auto;
+	}
+}
+footer {
+	background-color: #2d4a1f;
+	color: #e8dcc4;
+	padding: 20px 0;
+}
+
+footer h4 {
+	color: #e8dcc4;
+	font-family: "Permanent Marker", cursive;
+}
+
+footer p {
+	color: #e8dcc4;
+}
+
+footer a:link {
+	color: #e8dcc4;
+}
+
+footer a:visited {
+	color: #e8dcc4;
+}
+
+footer a:hover {
+	color: #c23b27;
+}
+
+footer a:active {
+	color: white;
+}
+
+.footer1000 {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.footer-icons .fa {
+	margin-right: 10px;
+}
+
+.footer-bottom {
+	border-top: 1px solid #e8dcc4;
+	margin-top: 20px;
+	padding-top: 20px;
+}
+/* Game page styles - canvas and button styling for JavaScript game */
+canvas {
+	border: 1px solid #d3d3d3;
+	background-color: #f1f1f1;
+	display: block;
+	margin: 0 auto;
+}
+
+.game-controls {
+	text-align: center;
+	margin: 20px 0;
+}
+
+.myButton {
+	background-color: #2d4a1f;
+	color: #e8dcc4;
+	padding: 15px 30px;
+	border: 2px solid #c23b27;
+	font-size: 18px;
+	cursor: pointer;
+	font-family: "Permanent Marker", cursive;
+}
+
+.myButton:hover {
+	background-color: #c23b27;
+	color: white;
+}
+
+/* Mobile/Desktop game controls - hides appropriate version based on screen size */
+.mobile {
+	display: none;
+}
+
+@media only screen and (max-width: 768px) {
+	.desktop {
+		display: none;
+	}
+	.mobile {
+		display: block;
+		touch-action: manipulation;
+	}
+}
